@@ -100,12 +100,20 @@ Ofrecemos soluciones modernas, eficientes y personalizadas para ampliar espacios
 
 <section id="contacto" class="contact">
 <h2>Solicita Información</h2>
-<form>
-<input type="text" placeholder="Nombre">
-<input type="tel" placeholder="Teléfono">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Describe tu proyecto"></textarea>
-<button type="submit">Enviar Solicitud</button>
+<form
+  action="https://formspree.io/f/xjgdagag"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your file:
+    <input type="file" name="upload">
+  </label>
+  <button type="submit">Send</button>
 </form>
 </section>
 
